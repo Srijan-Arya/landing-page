@@ -1,0 +1,496 @@
+/* Code written from sratch by *Srijan Arya* -No libraries, no frameworks, just vanilla CSS  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR CSS */
+
+.navbar .main-logo{
+    cursor: pointer;
+    width: 152px;
+    height: 42px;
+    margin-left: 32px;
+}
+
+
+::placeholder { 
+    color: #B5B7CA;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+.navbar input{ 
+    margin-left: -230px;
+    background: #FAFBFC;
+    border-radius: 15px;
+    height: 52px;
+    width: 610px;
+    border: 0px;
+    border-radius: 15px;
+    padding: 22px 16px;
+    background: url(./svg/navbar/search.svg) #FAFBFC ;
+    background-position: right;
+    background-position-x: 550px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.navbar input:focus{
+    outline: none;
+    box-shadow: 0px 0px 12px #4B0ACE;
+    /* background: red; */
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+
+
+.btn{
+    width: 44px;
+    height: 44px;
+    background: #FAFBFC;
+    border-radius: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+    background: #d8d8d8;
+}
+
+.svg{
+    width: 17px;
+    height: 18.4px;
+}
+
+.btn-profile{
+    cursor: pointer;
+    width: 47px;
+    height: 47px;
+    background: url(./svg/navbar/profile.svg);
+    border-radius: 100%;
+}
+
+.two{
+    position: relative;
+}
+
+.rounds{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 35px;
+    gap: 25px;
+}
+
+.red-dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 100%;
+    top:5px;
+    right: 0;
+}
+
+
+.side-bar{
+    margin: 0 17px;
+    margin-top: 25px;
+    width: 250px;
+}
+
+.side_buttons{
+    color:#787686 ;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 15px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 216px;
+    height: 46px;
+    border-radius: 15px;
+    margin-top: 12px;
+}
+
+.logout{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 29px;
+    color: #4B0ACE;
+}
+.side_buttons:first-child{
+    background: #4B0ACE;
+    color:white;
+}
+
+.side_buttons:nth-child(6), .side_buttons:nth-child(7){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side_buttons:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 42px #4B0ACE;
+    transition: all 0.2s;
+}
+
+.dot_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    width: 19px;
+    height: 19px;
+    font-family: 'Inter' Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    background: #F63D13;
+}
+
+.log{
+    justify-content: center;
+    margin-top: 400px;
+}
+
+
+/* RIGHT ONE CSS */
+.right-one{
+    margin-left: 35px;
+    margin-top: 17px;
+}
+
+
+/* PROMOTION CARD CSS */
+.promotion{
+    width: 723px;
+    height: 271px;
+    background: #4B0ACE;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.promotion>img{
+    width: 242px;
+    height: 242px;
+    margin: 15px 55px 14px auto;
+}
+
+.promotion_text{
+    margin: 37px 36px;
+}
+
+.heading{
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+
+.sub-text{
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: sans-serif;
+    color: #fff;
+    line-height: 39px;
+
+}
+
+.promotion_btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 600;
+    color: #21202B;
+    width: 182px;
+    height: 52px;
+    background: #FFA910;
+    border-radius: 15px;
+    margin-top: 33px;
+    border: 0;
+}
+
+.promotion_btn:hover{
+    transform: scale(1.1);
+    border: 3px solid #d2952c;
+    transition: all 0.2s;
+    box-shadow: 2px -2px 222px #FFA910;
+}
+
+/* PROMOTION CARD CSS ENDS */
+
+
+/* POPULAR GAMES -> CSS STARTS */
+
+.games_link{
+    cursor: pointer;
+    font-size: 18px;
+    color: #21202B;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-top:38px;
+    margin-bottom: 21px;
+}
+
+.games_link img{
+    width: 17px;
+    height: 8.92px;
+}
+
+/* POPULAR GAMES -> CSS ENDS */
+
+
+
+/* GAMES CARD CSS STARTS */
+
+.games_card_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 723px; 
+    margin: 10px;
+}
+.games_card:hover{
+    transform: skew(3deg, -3deg) scale(1.1);
+    transition:transform 0.3s;
+}
+.games_card{
+    cursor: pointer;
+    border: 2px solid transparent;
+    width: 225px;
+    height: 255px;
+    background: #301C57;
+    border-radius: 15px;
+}
+
+.selected .games{
+    color: #fff;
+}
+
+.games{
+    color: #000000;
+    border: 2px solid transparent;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+.games>img{
+    width: 198px;
+    height: 131px;
+}
+
+.game_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    margin-top: 8px;
+    
+}
+
+.game_title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 29px;
+}
+
+.game_details .stats{
+    display: flex;
+    align-items: baseline;
+    font-size: 10px;
+}
+
+.like_count{
+    margin-right: 14.68px;
+}
+
+.game_details .stats img{
+    margin-right: 6px;
+    height: 8.78px;
+    width: 10px;
+
+}
+
+.selected .game_description{
+    color: #fff;
+}
+
+.game_description{
+    color: #787686;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+
+.game_downloads{
+    display: flex;
+    justify-content: space-between;
+}
+
+.download_btn{
+    width: 76px;
+    height: 26px;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 10px;
+    background: #4B0ACE;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+.no-bg{
+    background: none;
+}
+
+/* GAMES CARD CSS ENDS */
+
+
+/* RIGHT ONE CSS ENDS */
+
+
+
+
+/* RIGHT TWO CSS STARTS */
+
+.right-two{
+    color: #fff;
+    margin-top: 17px;
+    margin-left: 60px;
+    width: 370px;
+    height: 878px;
+    background: #301C57;
+    border-radius: 20px;
+}
+
+.r2_content{
+    margin: 17px 23px;
+}
+
+.r2_content>img{
+    width: 100%;
+}
+
+.r2_content .game_description{
+    margin-top: 12px;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+
+.ratings{
+    margin-top: 40px;
+    display: flex;
+    gap: 22px;
+}
+.r1,.r2{
+    display: flex;
+}
+.roundbg{
+    width: 42px;
+    height: 42px;
+    border: 3px solid #533391;
+    border-radius: 100%;
+    margin-right: 12px;
+}
+.awards_game, .stars_game{
+    color: #787686;
+}
+
+.awards,.stars{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+}
+.r1 .roundbg{
+    background:url(./svg/right\ sidebar/star_badge.svg) no-repeat center; 
+}
+
+.r2 .roundbg{
+    background:url(./svg/right\ sidebar/trophy.svg) no-repeat center; 
+}
+
+/* RIGHT TWO CSS ENDS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content{
+    /* border: 3px solid magenta; */
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+
+.right-content{
+    /* background-color: rgb(255, 183, 95); */
+    width: 100%;
+    display: flex;
+}
+

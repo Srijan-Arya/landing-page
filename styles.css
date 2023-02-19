@@ -450,11 +450,11 @@
     font-size: 16px;
 }
 .r1 .roundbg{
-    background:url(./svg/right\ sidebar/star_badge.svg) no-repeat center; 
+    background:url(./svg/right\ sidebar/star_badge.png) no-repeat center; 
 }
 
 .r2 .roundbg{
-    background:url(./svg/right\ sidebar/trophy.svg) no-repeat center; 
+    background:url(./svg/right\ sidebar/trophy.png) no-repeat center; 
 }
 
 /* RIGHT TWO CSS ENDS */
